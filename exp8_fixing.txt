@@ -1,0 +1,12 @@
+sudo su -
+yum update -y
+yum install -y httpd unzip
+mkdir -p temp
+cd temp
+wget https://templatemo.com/download/templatemo_596_electric_xtra
+mkdir -p website
+unzip templatemo_596_electric_xtra -d website
+cd website/templatemo_596_electric_xtra
+mv * /var/www/html/
+systemctl enable httpd
+systemctl start httpd
