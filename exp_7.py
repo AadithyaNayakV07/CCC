@@ -76,3 +76,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+#pip install azure-storage-blob pillow
